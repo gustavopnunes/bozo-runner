@@ -1,0 +1,163 @@
+body, div, h1, header, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --path-color: burlywood;
+    --wall-color: blueviolet;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body, .container, .maze, .wall, .track, .start, .end, .player, .modal {
+    display: flex;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 8px auto;
+    font-size: 1.2rem;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: snow;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maze {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+
+.wall, .track, .start, .end, .player {
+    width: 3.81vw;
+    height: 5.333vh;
+}
+
+.track, .start, .end {
+    background-color: var(--path-color);
+}
+
+.wall, .track, .start, .end, .player {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, .balloon, .modal {
+    text-align: center;
+}
+
+.bozo, .vaccine, .balloon, .balloon:after, .modal {
+    position: absolute;
+}
+
+.wall {
+    background-color: var(--wall-color);
+}
+
+.track {
+    background-color: var(--path-color);
+}
+
+.bozo {
+    z-index: 1;
+    height: 220%;
+    bottom: 1px;
+}
+
+.bozogator {
+    height: 300%;
+}
+
+.cloroquina {
+    transform: rotate(25deg);
+    z-index: 4;
+    height: 250%;
+}
+
+.vaccine {
+    z-index: 2;
+    height: 150%;
+    bottom: 20%;
+}
+
+.remaining-lifes {
+    font-weight: bold;
+    margin: 8px auto;
+}
+
+.life {
+    color: red;
+}
+
+.balloon {
+    z-index: 5;
+    width: 100px;
+    padding: 8px;
+    left: 180%;
+    bottom: 80%;
+	background: #f0efc2;
+	border-radius: .4em;
+}
+
+.balloon:after {
+	content: '';
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #f0efc2;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
+
+.modal {
+    color: yellow;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 5;
+    width: 80vw;
+    border-radius: 2%;
+    opacity: 95%;
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s linear;
+}
+
+.modal h1 {
+    margin: 24px auto;
+    font-size: 1.6rem;
+}
+
+.modal p {
+    color: rgb(238, 236, 134);
+    border-radius: 5%;
+    width: 80%;
+    margin: 4px 140px;
+}
+
+footer {
+    font-size: .9rem;
+}
