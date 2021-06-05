@@ -42,7 +42,6 @@ h1 {
     width: 82vw;
     height: 80vh;
     flex-wrap: wrap;
-    /* max-width: 1120px ; */
 }
 
 .wall, .track, .start, .end, .player {
