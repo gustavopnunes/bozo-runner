@@ -39,9 +39,10 @@ h1 {
 
 .maze {
     margin: 0 auto;
-    width: 80vw;
+    width: 82vw;
     height: 80vh;
     flex-wrap: wrap;
+    /* max-width: 1120px ; */
 }
 
 .wall, .track, .start, .end, .player {
