@@ -200,7 +200,7 @@ function displayModal(condition) {
 
     if (condition === "areUTryingToCheat?") {
     text.textContent = "VOCÊ CONSQUISTOU A CLOROQUINA!"
-    text2.textContent = "Fique tranquilo! As chances de você se tornar uma jacaré foram zeradas."
+    text2.textContent = "Fique tranquilo! As chances de você se tornar um jacaré foram zeradas."
     text3.textContent = "Obrigado por jogar! E pelo amor de Deus não leve nada disso aqui a sério. "
     let bozo = document.createElement("img");
     bozo.src = "img/bolsimpson.png";
