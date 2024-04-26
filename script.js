@@ -199,7 +199,7 @@ function displayModal(condition) {
     let text3 = document.createElement("p");
 
     if (condition === "areUTryingToCheat?") {
-    text.textContent = "VOCÊ CONSQUISTOU A CLOROQUINA!"
+    text.textContent = "VOCÊ CONQUISTOU A CLOROQUINA!"
     text2.textContent = "Fique tranquilo! As chances de você se tornar um jacaré foram zeradas."
     text3.textContent = "Obrigado por jogar! E pelo amor de Deus não leve nada disso aqui a sério. "
     let bozo = document.createElement("img");
